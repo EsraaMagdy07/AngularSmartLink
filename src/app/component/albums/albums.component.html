@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">
+            <img src="https://smartlink.muzicup.com/assets/images/logo.png">
+
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <!-- Search form -->
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+
+        </div>
+    </div>
+    <div class="container-fluid cards">
+        <div class="row">
+            <div class="col-md-3 col-sm-1" *ngFor="let item of AlbumList">
+                <div class="card">
+                    <img [src]="item.albumImagePath" class="card-img" alt="..." />
+
+                    <div class="card-body">
+                        <a routerLink="/SmartLink/{{item.artistName}}/{{item.albumName}}/{{item.albumId}}" routerLinkActive="active">
+                            <p class="card-title">{{item.artistName}}</p>
+                            <p class="card-title">{{item.albumName}}</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Khazal</p>
+                        <p class="card-title">Mohamed Seleem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Khazal</p>
+                        <p class="card-title">Mohamed Seleem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Khazal</p>
+                        <p class="card-title">Mohamed Seleem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Khazal</p>
+                        <p class="card-title">Mohamed Seleem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Khazal</p>
+                        <p class="card-title">Mohamed Seleem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Khazal</p>
+                        <p class="card-title">Mohamed Seleem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="imgIcon">
+                        <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-title">Khazal</p>
+                        <p class="card-title">Mohamed Seleem</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Khazal</p>
+                        <p class="card-title">Mohamed Seleem</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+
+</body>
+
+</html>

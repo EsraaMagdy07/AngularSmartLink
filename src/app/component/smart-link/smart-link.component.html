@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <div class="bg-image" [ngStyle]="{ 'background-image': 'url(' + sam.imageUrl + ')'}"></div>
+
+    <div class="bg-text">
+        <h2>{{sam.artistName}}</h2>
+        <h1 class="trackInfo">{{sam.albumName}}- {{sam.contentName}}</h1>
+        <button class="btn btn-danger btnsPlayShare">Play</button>
+        <button class="btn btn-danger btnsPlayShare" id="btnShare">Share</button>
+    </div>
+    <div id="empty">
+
+    </div>
+    <div class="container cards">
+        <div class="row">
+            <div class="col-md-3 col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <button class="btn btn-danger btn-listen">Listen</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <button class="btn btn-danger btn-listen">Listen</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <button class="btn btn-danger btn-listen">Listen</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm">
+                <div class="card">
+                    <img src="https://api.muzicup.com//Portal/5/Content/Images/Mohamed_Selim.jpg" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <button class="btn btn-danger btn-listen">Listen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <ang-music-player [audioList]=audioList id="audioPlayList"></ang-music-player>
+    </div>
+</body>
+
+</html>
